@@ -70,6 +70,26 @@ export const AppLayout = React.memo((props: any) => {
                 defaultSelectedKeys={[defaultKey]}
                 mode="inline"
               >
+                <Menu.Item key="6" icon={<ShoppingOutlined />}>
+                <a
+                    title="Trade"
+                    href= "https://chemeleon.world"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Trade
+                  </a>
+                </Menu.Item>
+                <Menu.Item key="7" icon={<ShoppingOutlined />}>
+                <a
+                    title="Pool"
+                    href= "https://chemeleon.world"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Pool
+                  </a>
+                </Menu.Item>
                 <Menu.Item key="1" icon={<HomeOutlined />}>
                   <Link
                     to={{
@@ -115,6 +135,7 @@ export const AppLayout = React.memo((props: any) => {
                     {LABELS.MENU_LIQUIDATE}
                   </Link>
                 </Menu.Item>
+                
                 {/* Hide margin option for now  */}
                 {/* <Menu.Item key="6"  onItemHover={() => {}}  icon={< LineChartOutlined/>}>
                 <Link
